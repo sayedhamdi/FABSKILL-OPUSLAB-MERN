@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+
+    <script>
+      /*let x = 5; // type number;
+      let pi = 3.14; // type number;
+      let y = -100; // type number;
+      console.log(typeof x);
+      console.log(typeof pi);
+      console.log(typeof y);
+      let name = "ali";
+      let character = "A";
+      console.log(typeof name);
+      console.log(typeof character);
+      let variable;
+
+      console.log(typeof variable);
+      console.log(variable); */
+      /* let s = "chaine";
+      console.log(s);
+      s += " de caractere bonjour bonjour";
+      console.log(s);
+
+      let y = 8;
+
+      y = y + 2;
+      y += 2;
+      console.log(y);
+
+      let temperature = 0;
+      */
+      // if temperature < 0
+      // ta9s bered barcha
+      // 0- 10 ta9s bered
+      // 10 - 30 ta9s behi ça va
+      // 30 > ta9s ta9s skhoun
+      /* if (temperature < 0) {
+        console.log("ta9s bered barcha");
+      } else if (temperature >= 0 && temperature <= 10) {
+        console.log("ta9s bered ");
+      } else if (temperature > 10 && temperature <= 30) {
+        console.log("ta9s ça va behi ");
+      } else {
+        console.log("ta9s skhoun ");
+      }*/
+      let name = "hello";
+      console.log(name.repeat(2));
+
+      // variable name reste la meme
+      console.log(name);
+      // cette ligne va afficher le dernier caractere
+      console.log(name[name.length - 1]);
+
+      let t = [2, 3, 17, 25, 11, 2, 4, 14, 16];
+      console.log(t);
+
+      t.push(6);
+      console.log("après");
+      console.log(t);
+      t.pop();
+      console.log("après");
+      console.log(t.length);
+
+      console.log(typeof t);
+      //initialisation ,  condition d'arret  , incrementation
+      for (let i = 1; i <= 5; i++) {
+        console.log(i);
+      }
+      console.log("----------------");
+      for (let i = 0; i < t.length; i++) {
+        if (t[i] % 2 == 1) {
+          console.log(t[i]);
+        }
+      }
+
+      let person = {
+        name: "ahmed",
+        age: 28,
+        occupation: "fullstack developer",
+        "last-name": "mohsen",
+        address: {
+          street: "rue de paris",
+          codePostal: 1000,
+          ville: "Tunis",
+          pays: "Tunisie",
+        },
+      };
+
+      console.log(person.name);
+      console.log(person.age);
+      console.log(person["last-name"]);
+      console.log(person.address.ville);
+
+      person.status = "single";
+      console.log(person);
+    </script>
+  </body>
+</html>

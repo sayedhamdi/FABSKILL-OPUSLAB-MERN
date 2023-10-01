@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background: orange;
+      }
+      .hidden  {
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">hello hello it's a orange box</div>
+
+    <button onclick="changeBox()">click !</button>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      <p class="hidden">Beatae
+      recusandae, eum laboriosam in explicabo aperiam cum rem pariatur
+      accusantium sit! Fuga soluta dolore omnis explicabo sequi expedita
+      deleniti dolor sint. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Beatae, sint. Voluptatem, similique quaerat. Soluta sunt dolorem
+      obcaecati nesciunt provident dolorum voluptatibus autem, aperiam quae
+      rerum vero architecto animi dolore commodi?</p>
+    </p>
+    <button id="more" onclick="showMore()">show more</button>
+
+    <script>
+      // cleaner code
+      let boxHTML = document.querySelector(".box");
+
+      let hiddenParagraph = document.querySelector(".hidden");
+
+      let buttonShowMore = document.querySelector("#more")
+
+     // let pVisible = false
+
+        pVisible = true
+      function showMore(){
+        if(pVisible){
+
+             hiddenParagraph.style.display = "none"
+             buttonShowMore.innerText = "show more"
+
+            pVisible = false
+        }else{
+            hiddenParagraph.style.display = "block"
+            buttonShowMore.innerText = "show less"
+            pVisible = true
+        }
+        
+
+      }
+
+
+
+      function changeBox() {
+        boxHTML.style.background = "red";
+        boxHTML.style.fontSize = "50px";
+        boxHTML.style.color = "white";
+        boxHTML.style.fontWeight = "bold";
+        boxHTML.innerHTML = "Hello hello it's a red box";
+      }
+      function sayHello(name) {
+        console.log("yoooo ! bonjour");
+        console.log("-------------");
+        console.log("hello " + name);
+        console.log("-------------");
+        console.log("Byeee !!");
+      }
+
+      sayHello("aziz");
+      sayHello("khalil");
+      sayHello("moncef");
+      /*function add(x, y) {
+        console.log("resultat de x + y = ", x + y);
+      }
+
+      add(4, 3);
+      add(2, 10);*/
+    </script>
+  </body>
+</html>

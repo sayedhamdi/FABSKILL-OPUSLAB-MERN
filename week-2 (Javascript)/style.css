@@ -1,0 +1,22 @@
+h1 {
+  font-size: 60px;
+}
+
+hr {
+  width: 200px;
+}
+table {
+  width: 700px;
+}
+.section2 {
+  padding-top: 20px;
+}
+.text-gray {
+  color: gray;
+}
+.education-bio {
+  margin-top: 40px;
+}
+.education {
+  width: 350px;
+}
